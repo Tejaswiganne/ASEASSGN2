@@ -1,0 +1,21 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=0E:02:7A:66:83:10:E4:6C:EC:77:05:20:3E:05:41:69:84:6E:CB:6F%3Bcom.example.navya.api_application
+
+    You can also add your credentials to an existing key, using this line:
+    0E:02:7A:66:83:10:E4:6C:EC:77:05:20:3E:05:41:69:84:6E:CB:6F;com.example.navya.api_application
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyDhjgzkT-ROBpey-foKNFeCvQUCrFBabLQ
+    </string>
+</resources>

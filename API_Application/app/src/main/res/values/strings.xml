@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">API_Application</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_api__interface">API_Interface</string>
+    <string name="User_Login.text">User Login</string>
+    <string name="username.text">User Name</string>
+    <string name="title_activity_api__interface1">Map</string>
+</resources>
