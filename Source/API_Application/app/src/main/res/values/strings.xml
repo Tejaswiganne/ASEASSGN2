@@ -5,4 +5,5 @@
     <string name="User_Login.text">User Login</string>
     <string name="username.text">User Name</string>
     <string name="title_activity_api__interface1">Map</string>
+    <string name="title_activity_locate__map">Map</string>
 </resources>
