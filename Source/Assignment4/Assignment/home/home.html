@@ -38,25 +38,42 @@
             float: left;
             margin: 0 .75em;
         }
-
+        .directionbtn
+        {
+            margin-top:10px;
+        }
+        .setwidth{
+            width:164px;
+        }
+        .setwid{
+            width:100px;
+        }
+        .mar{
+            margin-right:74px;
+        }
     </style>
 </head>
 
 <body>
 
 <div class="wrapper" ng-controller="googlemapoutput">
-        <input type="text"  ng-model="startlocation" id="startlocation"/>
-        <input type="text"  ng-model="endlocation" id="endlocation" />
-        <input type="text"  ng-model="state1" id="state1" />
-        <input type="text"  ng-model="state2" id="state2" />
+        <label class="setwidth">From City</label><input type="text" class="mar"  ng-model="startlocation" id="startlocation"/>
+        <label class="setwid">From State</label> <input type="text"   ng-model="state1" id="state1" />
+    <br/><br/>
+        <label class="setwidth">To City</label><input type="text" class="mar"  ng-model="endlocation" id="endlocation" />
+        <label class="setwid">To State</label><input type="text"  ng-model="state2" id="state2" />
+    <div class="directionbtn">
         <button id="btn" ng-click="calcRoute()">
             Get Direction
         </button>
-        <br/></br>
+        </div>
+        <br/><br/>
         <button id="btn1" ng-click="getWeather()"> Show Weather </button>
         <br/>
         <br/>
-        {{ temp }} {{temp1}}
+       <p ng-hide="fromCity">The temperature at from city is {{temp}}</p>
+       <p ng-hide="toCity">The temperature at to city is {{temp1}}</p>
+
     <div id="map-canvas" style="height: 400px;"></div>
 </div>
 </body>

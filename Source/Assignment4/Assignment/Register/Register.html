@@ -1,8 +1,17 @@
+<html>
+<head>
+	<style>
+		.mandatory
+		{
+			color:red;
+		}
+	</style>
+</head>
 <body>
 
 
 
-
+<h2 style="text-align: center">Registration Page</h2>
 
 <form name="userForm" ng-submit="submitForm(userForm.$valid)" ng-controller="RegisterController" novalidate>
 	<ul>
@@ -59,7 +68,9 @@
 		<li class="row-fluid">
 			<div class="buttondiv row-fluid showFields" id="showfields2">
 				<label for="aboutYouButton1" class="hidden"></label>
-				<button type="submit" id="aboutYouButton1" class="btnClass next" title="Save &amp; Continue" value="Save &amp; Continue">Submit</button>
+				<div class="center">
+				<button type="submit" id="aboutYouButton1" class="btn btn-primary btn-lg btn_color" title="Save &amp; Continue" value="Save &amp; Continue">Register</button>
+			</div>
 				<div class="clear"></div>
 			</div>
 			<p class="ErrorMsg" ng-hide="continueMsg">Registration successful.click <a ui-sref="login">here</a> to login</p>

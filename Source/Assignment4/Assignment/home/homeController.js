@@ -6,6 +6,8 @@ app.controller('googlemapoutput', function ($scope,$http) {
     var start;
     var st1;
     var st2;
+    $scope.fromCity=true;
+    $scope.toCity=true;
     var directionsDisplay = new google.maps.DirectionsRenderer({
         draggable: true
     });
@@ -52,6 +54,7 @@ app.controller('googlemapoutput', function ($scope,$http) {
             weather = data.current_observation.weather;
             console.log(temp);
             $scope.temp = temp;
+            $scope.fromCity=false;
             $scope.currentweather = {
                 html: "Currently " + temp + " &deg; F and " + weather + ""
             }
@@ -68,6 +71,7 @@ app.controller('googlemapoutput', function ($scope,$http) {
             weather1 = data.current_observation.weather;
             console.log(temp1);
             $scope.temp1 = temp1;
+            $scope.toCity=false;
             $scope.currentweather = {
                 html: "Currently " + temp1 + " &deg; F and " + weather1 + ""
             }

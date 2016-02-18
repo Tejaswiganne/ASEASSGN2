@@ -14,17 +14,18 @@
 			.right{
 				float:right;
 			}
-			.btn_color{
-				background-color:#5b74a8;
-				border-color: #2f477a;
-				color:#ffffff;
+
+			.btn.btn-primary.btn_color{
+				background-color:#FFFF00;
+				border-color: #FFFF00;
+				color:#000000;
 			}
 			.btn_color:hover {
-				background-color:#2f477a;
+				background-color:#FFFF00;
 			}
 			.header
 			{
-				background-color: blue;
+				background-color: deepskyblue;
 				padding:10px;
 				margin-bottom:10px;
 			}
@@ -46,15 +47,18 @@
 	</head>
 	<body class="home" ng-app="myApp" ng-controller="headerController">
 	<div class="wrapper">
-		<h1 class="heading">Welcome to the page of Google Direction and Weather Services</h1>
+		<h1 class="heading">Home</h1>
 		<div class="header">
 
 	<div class="right">
-		<button type="submit" ng-click="changePage1()" class="btn btn-primary btn-lg" id="Login">Login</button>
-		<button type="submit" ng-click="changePage2()"  class="btn btn-primary btn-lg" id="Register">Register</button>
+		<button type="submit" ng-click="changePage2()"  class="btn btn-primary btn-lg btn_color" id="Register">Register</button>
+	</div>
+	<div class="left">
+		<button type="submit" ng-click="changePage1()" class="btn btn-primary btn-lg btn_color" id="Login">Login</button>
 	</div>
 			<div class="clear"></div>
 			</div>
+
 
 	<div class="viewContainer">
       <ui-view></ui-view>
