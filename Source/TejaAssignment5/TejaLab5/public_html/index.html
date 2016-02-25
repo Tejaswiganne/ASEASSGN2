@@ -24,10 +24,15 @@
             height:36px;
             border:none;
             outline:none;
-            background-color: lavender;
+            background-color: rgb(88, 255, 147);
+            border-color: rgb(88, 255, 147);
+            color:#000000;
             padding: 12px;
 
+
         }
+
+
         .text_style{
             padding: 10px;
             border-radius: 10px;
@@ -39,7 +44,7 @@
         var VALIDURL    =   'https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=';
         var SCOPE       =   'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email';
         var CLIENTID    =   '200776314510-spdvksh8as0vqa4a8kk49e856ectn1ai.apps.googleusercontent.com';
-        var REDIRECT    =   'http://localhost:63342/LabAssignment5/LabAssignment5/public_html/Main.html'
+        var REDIRECT    =   'http://localhost:63342/TejaLab5/TejaLab5/public_html/Main.html'
         var LOGOUT      =   'http://accounts.google.com/Logout';
         var TYPE        =   'token';
         var _url        =   OAUTHURL + 'scope=' + SCOPE + '&client_id=' + CLIENTID + '&redirect_uri=' + REDIRECT + '&response_type=' + TYPE;

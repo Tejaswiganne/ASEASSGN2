@@ -6,10 +6,31 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
     <script src="IntegratingFile.js"></script>
     <gcse:searchbox-only></gcse:searchbox-only>
+
+    <style>
+    body{
+     background-color: #00BFFF;
+    }
+.btn_style
+{
+-webkit-border-radius:10px;
+-moz-border-radius:10px;
+border-radius:10px;
+height:36px;
+border:none;
+outline:none;
+background-color: rgb(88, 255, 147);
+border-color: rgb(88, 255, 147);
+color:#000000;
+padding: 12px;
+
+
+}
+</style>
 </head>
 <body ng-controller="Sentiment">
-Enter Text: <input type="text" ng-model="SentiText" id="sentitext"/>
-<button ng-click="getReviews(SentiText)">Get Sentiment</button>
+Enter Text: <input type="text" ng-model="SentiText"id="sentitext"/>
+<button ng-click="getReviews(SentiText)" class="btn_style" >Get Sentiment</button>
 {{ sentiment1 }}
 <br/><br/><br/>
 {{ sentiment }}

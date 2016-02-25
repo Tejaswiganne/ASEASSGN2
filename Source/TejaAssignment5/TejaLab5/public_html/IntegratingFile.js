@@ -21,7 +21,7 @@ var SentimentApp = angular.module("MashApp",[]);
                                 }
                                 $scope.sentiment1 = SentimentText;
                                 var callback = $http.get("http://gateway-a.watsonplatform.net/calls/text/TextGetTextSentiment" +
-                                        "?apikey=5f3b5ccd34a8fbb9203b943ce4f5f8728ae124cd" +
+                                        "?apikey=246da89ebe14f97dbc5d2921fa94ca2efbd6bf0b" +
                                         "&outputMode=json&text=" + SentimentText);
                                 callback.success(function (data) {
                                 if(data!=null && data.docSentiment!=null)
